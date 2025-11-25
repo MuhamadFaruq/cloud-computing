@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>CatatUang - Kelola Keuangan Pribadi Jadi Mudah</title>
+    <meta name="description" content="Aplikasi pencatat keuangan harian terbaik. Gratis, simpel, dan aman. Download sekarang di Android dan iOS.">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top py-3 transition-all">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary fs-4" href="index.html">
+                <i class="bi bi-wallet2"></i> CatatUang
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"><a class="nav-link" href="#fitur">Fitur</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="privacy.html">Privasi</a></li>
+                </ul>
+                <div class="text-center mt-3 mt-lg-0">
+                    <button onclick="handleDownload('Store')" class="btn btn-primary ms-lg-3 rounded-pill px-4 shadow-sm">Download App</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section d-flex align-items-center" id="home">
+        <div class="container">
+            <div class="row align-items-center flex-column-reverse flex-lg-row">
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <h1 class="display-4 fw-bold mb-3 lh-sm">Kendali Penuh atas <br> <span class="text-primary">Dompet Anda.</span></h1>
+                    <p class="lead text-muted mb-5">
+                     
+                    <p class="lead text-muted mb-5">
+                        Muhamad Faruq <br>
+                        062301022 <br>
+                        Informatika
+                    </p>
+                    <div class="d-flex gap-3 flex-column flex-sm-row">
+                        <button onclick="handleDownload('Play Store')" class="btn btn-primary btn-lg rounded-pill shadow-sm px-4">
+                            <i class="bi bi-google-play me-2"></i> Play Store
+                        </button>
+                        <button onclick="handleDownload('App Store')" class="btn btn-outline-dark btn-lg rounded-pill px-4">
+                            <i class="bi bi-apple me-2"></i> App Store
+                        </button>
+                    </div>
+                    <div class="mt-4 text-muted small">
+                        <i class="bi bi-star-fill text-warning"></i> 4.9/5 Rating (10k+ Reviews)
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center position-relative">
+                <div class="hero-image-wrapper">
+                    
+                    <img src="assets/img/img.png" alt="Tampilan Aplikasi" class="img-fluid app-screenshot" style="z-index: 10;">
+
+                    <div class="floating-card card-top-left shadow-sm p-3 bg-white rounded-4 d-flex align-items-center gap-3">
+                        <div class="icon-box bg-success bg-opacity-10 text-success p-2 rounded-3">
+                            <i class="bi bi-piggy-bank-fill fs-5"></i>
+                        </div>
+                        <div class="text-start">
+                            <h6 class="fw-bold mb-0 small">Hemat 20%</h6>
+                            <small class="text-muted" style="font-size: 0.7rem;">Bulan ini</small>
+                        </div>
+                    </div>
+
+                    <div class="floating-card card-mid-right shadow-sm p-3 bg-white rounded-4 text-center">
+                        <h6 class="fw-bold mb-2 small text-start">Pengeluaran</h6>
+                        <i class="bi bi-graph-down-arrow text-danger display-6"></i>
+                        <div class="mt-2 text-muted" style="font-size: 0.7rem;">Turun drastis!</div>
+                    </div>
+
+                    <div class="floating-card card-bottom-left shadow-sm p-2 bg-white rounded-pill d-flex align-items-center gap-2 pe-4">
+                        <i class="bi bi-check-circle-fill text-primary fs-4"></i>
+                        <div class="text-start">
+                            <small class="fw-bold d-block" style="font-size: 0.8rem;">Gaji Masuk!</small>
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                <div class="abstract-bg-shape"></div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" id="fitur">
+        <div class="container py-5">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-md-8">
+                    <h2 class="fw-bold">Mengapa Memilih Kami?</h2>
+                    <p class="text-muted">Didesain khusus untuk Anda yang ingin praktis.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card feature-card h-100 p-4 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="feature-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+                            <h4 class="card-title fw-bold">Instan & Cepat</h4>
+                            <p class="card-text text-muted">Buka aplikasi langsung catat. Tidak perlu loading lama atau menu berbelit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card h-100 p-4 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="feature-icon"><i class="bi bi-pie-chart-fill"></i></div>
+                            <h4 class="card-title fw-bold">Analisis Visual</h4>
+                            <p class="card-text text-muted">Pahami kebiasaan belanja Anda melalui grafik yang indah dan mudah dimengerti.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card h-100 p-4 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="feature-icon"><i class="bi bi-lock-fill"></i></div>
+                            <h4 class="card-title fw-bold">Privasi Terjamin</h4>
+                            <p class="card-text text-muted">Kami tidak menjual data Anda. Data tersimpan aman di perangkat Anda.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light" id="faq">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Pertanyaan Umum (FAQ)</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="accordionFAQ">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    Apakah aplikasi ini gratis?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body text-muted">
+                                    Ya! Fitur dasar pencatatan tersedia gratis selamanya. Kami juga menyediakan versi Premium untuk fitur sinkronisasi bank.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    Apakah data saya aman?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body text-muted">
+                                    Sangat aman. Kami menggunakan enkripsi standar industri dan data utama tersimpan secara lokal di perangkat Anda.
+                                </div>
+                            </div>
+                        </div>
+                         <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                    Bisa export ke Excel?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body text-muted">
+                                    Bisa. Anda dapat mengunduh laporan bulanan dalam format .CSV atau .XLSX kapan saja.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-primary mb-3">CatatUang</h5>
+                    <p class="text-secondary small">Membantu masyarakat Indonesia mencapai kebebasan finansial melalui pencatatan yang disiplin.</p>
+                </div>
+                <div class="col-md-2 offset-md-2">
+                    <h6 class="fw-bold mb-3">Produk</h6>
+                    <ul class="list-unstyled text-secondary small">
+                        <li class="mb-2"><a href="#" class="text-secondary">Download</a></li>
+                        <li class="mb-2"><a href="#" class="text-secondary">Fitur</a></li>
+                        <li class="mb-2"><a href="#" class="text-secondary">Harga</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="fw-bold mb-3">Perusahaan</h6>
+                    <ul class="list-unstyled text-secondary small">
+                        <li class="mb-2"><a href="#" class="text-secondary">Tentang Kami</a></li>
+                        <li class="mb-2"><a href="#" class="text-secondary">Kontak</a></li>
+                        <li class="mb-2"><a href="privacy.html" class="text-secondary">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="fw-bold mb-3">Sosial</h6>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="text-center text-secondary small">
+                &copy; 2025 CatatUang App. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4a4a4a;
+    overflow-x: hidden;
+}
+
+.hero-section {
+    padding: 120px 0 80px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #eef2f3 100%);
+}
+
+.app-screenshot {
+    border-radius: 24px;
+    transition: transform 0.3s ease;
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.app-screenshot:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08) !important;
+    border-color: transparent;
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: #0d6efd;
+    margin-bottom: 1rem;
+}
+
+.accordion-item {
+    border: none;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-radius: 8px !important;
+    overflow: hidden;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #e7f1ff;
+    color: #0d6efd;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,0.125);
+}
+
+footer a {
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+footer a:hover {
+    color: #fff !important;
+}
+
+.hero-image-wrapper {
+    position: relative;
+    display: inline-block; 
+    padding: 20px; 
+}
+
+.floating-card {
+    position: absolute; 
+    z-index: 20; 
+    min-width: 140px;
+    border: 1px solid rgba(0,0,0,0.05);
+    animation: floatAnimation 3s ease-in-out infinite;
+}
+
+.card-top-left {
+    top: 10%;
+    left: -15%;
+    animation-delay: 0s;
+}
+
+.card-mid-right {
+    top: 40%;
+    right: -20%;
+    animation-delay: 1s;
+}
+
+.card-bottom-left {
+    bottom: 15%;
+    left: -10%;
+    min-width: auto; 
+    animation-delay: 0.5s;
+}
+
+@keyframes floatAnimation {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.abstract-bg-shape {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(13, 110, 253, 0.1) 0%, rgba(255,255,255,0) 70%);
+    z-index: 1; 
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .floating-card {
+        display: none !important;
+    }
+    .hero-image-wrapper {
+        padding: 0;
+    }
+}
